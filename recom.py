@@ -25,7 +25,7 @@ tfidf_matrix = sparse.load_npz('tfidf_matrix.npz')
 
 # Initialize BigQuery client
 def get_bq_data():
-    key_path = "astro-435108-c9a82eba7e13.json"
+    key_path = "your_json_here.json"
     credentials = service_account.Credentials.from_service_account_file(key_path)
     client = bigquery.Client(credentials=credentials, project=credentials.project_id)
     query = """
